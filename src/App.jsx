@@ -1,5 +1,13 @@
+import TodoInput from "./components/TodoInput";
+import TodoList from "./components/TodoList";
+
 const App = () => {
-  return <div></div>;
+  return (
+    <main>
+      <TodoInput />
+      <TodoList />
+    </main>
+  );
 };
 
 export default App;
