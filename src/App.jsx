@@ -9,6 +9,11 @@ const App = () => {
     "Learn new things daily",
   ]);
 
+  function handleAddTodo(newTodo) {
+    const newTodoList = [...todos, newTodo];
+    setTodos(newTodoList);
+  }
+
   return (
     <main>
       <TodoInput />
