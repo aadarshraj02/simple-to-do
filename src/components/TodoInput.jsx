@@ -1,5 +1,7 @@
 const TodoInput = () => {
-  return <div></div>;
+  return <header>
+    <input type="text" placeholder="enter tasks..."/>
+  </header>;
 };
 
 export default TodoInput;
