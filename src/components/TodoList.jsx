@@ -1,3 +1,5 @@
+import TodoCard from "./TodoCard";
+
 const TodoList = () => {
   let todos = [
     "Solve Leetcode in the morning",
@@ -7,7 +9,7 @@ const TodoList = () => {
   return (
     <div>
       {todos.map((todo, index) => (
-        <div key={index}></div>
+        <TodoCard key={index} />
       ))}
     </div>
   );
