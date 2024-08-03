@@ -9,7 +9,9 @@ const TodoList = () => {
   return (
     <div>
       {todos.map((todo, index) => (
-        <TodoCard key={index} />
+        <TodoCard key={index}>
+          <p>{todo}</p>
+        </TodoCard>
       ))}
     </div>
   );
