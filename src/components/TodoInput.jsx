@@ -5,6 +5,7 @@ export default function TodoInput(props) {
   return (
     <header>
       <input
+        className="border-2 border-yellow-600"
         value={todoValue}
         onChange={(e) => {
           setTodoValue(e.target.value);
