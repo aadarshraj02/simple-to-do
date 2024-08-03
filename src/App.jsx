@@ -46,7 +46,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="bg-zinc-800 h-screen flex items-center flex-col p-10 text-zinc-400">
       <TodoInput
         todoValue={todoValue}
         setTodoValue={setTodoValue}
@@ -57,7 +57,7 @@ function App() {
         handleDeleteTodo={handleDeleteTodo}
         todos={todos}
       />
-    </>
+    </div>
   );
 }
 
