@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <main>
-      <TodoInput />
+      <TodoInput handleAddTodo={handleAddTodo} />
       <TodoList todos={todos} />
     </main>
   );
