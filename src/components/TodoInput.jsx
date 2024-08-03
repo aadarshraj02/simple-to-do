@@ -1,8 +1,7 @@
 import { useState } from "react";
 
-const TodoInput = (props) => {
-  const { handleAddTodos } = props;
-  const [todoValue, setTodoValue] = useState("");
+export default function TodoInput(props) {
+  const { handleAddTodos, todoValue, setTodoValue } = props;
   return (
     <header>
       <input
@@ -10,19 +9,16 @@ const TodoInput = (props) => {
         onChange={(e) => {
           setTodoValue(e.target.value);
         }}
-        type="text"
-        placeholder="enter tasks..."
-        className=""
+        placeholder="Enter todo..."
       />
       <button
         onClick={() => {
           handleAddTodos(todoValue);
+          setTodoValue("");
         }}
       >
         Add
       </button>
     </header>
   );
-};
-
-export default TodoInput;
+}
