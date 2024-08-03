@@ -10,7 +10,7 @@ const App = () => {
   return (
     <main>
       <TodoInput />
-      <TodoList />
+      <TodoList todos={todos} />
     </main>
   );
 };

@@ -1,6 +1,7 @@
 import TodoCard from "./TodoCard";
 
-const TodoList = () => {
+const TodoList = (props) => {
+  const { todos } = props;
   return (
     <div>
       {todos.map((todo, index) => (
